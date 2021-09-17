@@ -47,7 +47,6 @@
     visibility: hidden;
 
     @include mediumScreen() {
-      display: flex !important;
       position: static;
       left: unset;
       top: unset;
@@ -56,6 +55,7 @@
       padding: unset;
       opacity: 1 !important;
       z-index: 1;
+      visibility: visible !important;
     }
   }
 
