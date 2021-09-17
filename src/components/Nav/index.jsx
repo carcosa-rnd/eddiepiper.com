@@ -11,28 +11,29 @@ import { nav } from "../../eddiepiper.config";
 import logo from "../../assets/images/logo.png";
 
 function Nav() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuTl] = useState(gsap.timeline({ paused: true, defaults: { duration: 0.3 } }));
 
-  const toggleNav = () => setIsOpen(!isOpen);
+  const toggleNav = () => menuTl.reversed(!menuTl.reversed());
 
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { duration: 0.3 } });
-
-    if (isOpen) {
-      return tl.to(".nav_links_wrapper", {
-        display: "flex",
-        opacity: 1,
-      });
-    }
-
-    return tl.to(".nav_links_wrapper", { opacity: 0 }).to(".nav_links_wrapper", {
-      display: "none",
-      delay: 0.1,
-    });
-  }, [isOpen]);
+    menuTl
+      .to(".nav_links_wrapper", {
+        visibility: "visible",
+        autoAlpha: 1,
+        backgroundColor: "rgba(0,0,0,0.8)",
+      })
+      .to(
+        ".nav",
+        {
+          backgroundColor: "rgba(0,0,0,0.8)",
+        },
+        "-=0.3"
+      )
+      .reverse();
+  }, []);
 
   return (
-    <nav className={styles.nav}>
+    <nav className={clsx(styles.nav, "nav")}>
       <Container className={styles.container}>
         <div className={styles.logo_wrapper}>
           <span className={styles.logo}>
