@@ -2,9 +2,12 @@
 @import "/src/styles/variables";
 
 .nav {
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
   height: 58px;
-  background: palegreen;
+  background: transparent;
+  z-index: 100;
 
   @include mediumScreen() {
     height: 68px;
@@ -17,6 +20,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 12px 0;
     }
   }
 
@@ -35,8 +39,6 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    background: pink;
-    z-index: -1;
     opacity: 0;
 
     @include mediumScreen() {
