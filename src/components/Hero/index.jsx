@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Container from "../Layout/Container";
 import styles from "./hero.module.scss";
@@ -14,9 +13,9 @@ function Hero() {
           <h1 className={styles.title}>{hero.title}</h1>
           <span className={styles.description}>{hero.description}</span>
           <span className={styles.tagline}>{hero.tagline}</span>
-          <Link className={styles.cta} to="#OmOss">
+          <a className={styles.cta} href="#OmOss">
             {hero.button}
-          </Link>
+          </a>
         </div>
       </Container>
     </section>

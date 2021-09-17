@@ -2,7 +2,7 @@
 @import "/src/styles/variables";
 
 .hero {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../../assets/images/marten-bjork-n_IKQDCyrG0-unsplash.jpg") center no-repeat;
   background-size: cover;
   min-height: 350px;
@@ -18,9 +18,13 @@
   .container {
     display: flex;
     align-items: center;
-    padding: 35px 15px;
+    padding: 80px 15px;
 
     @include mediumScreen() {
+      padding: 94px 40px;
+    }
+
+    @include xlScreen() {
       padding: 94px 0;
     }
   }
