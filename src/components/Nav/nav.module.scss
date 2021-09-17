@@ -11,6 +11,7 @@
 
   @include mediumScreen() {
     height: 68px;
+    background: transparent !important;
   }
 
   .container {
@@ -56,6 +57,7 @@
       opacity: 1 !important;
       z-index: 1;
       visibility: visible !important;
+      background: transparent !important;
     }
   }
 
