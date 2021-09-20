@@ -66,8 +66,15 @@
     display: inline-block;
     color: $--text-color-white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     border: 2px solid $--primary-light-100;
     padding: 10px 20px;
+    transition: background 300ms ease;
+    font-weight: 700;
+
+    &:hover {
+      background: $--primary-light-100;
+      transition: background 300ms ease;
+    }
   }
 }
