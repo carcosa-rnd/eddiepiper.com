@@ -43,6 +43,39 @@ export const about = {
   ],
 };
 
+export const process = {
+  title: "Processen",
+  description:
+    "Vi älskar att skapa genom teknologi, men inte utan att först och på djupet förstå människors beteenden och behov. För bara så kan vi bygga tjänster som kunder älskar. Därför har vi en väl beprövad process för att formulera de viktigaste insikterna och skapa bubblande innovation! Vi ämnar till ett strukturerat innovationsarbete, men i det ingår att våga utforska okända områden, utmana nuläge och sätta en helt ny riktning. Vi pysslar med modig innovation, tillsammans med slutanvändare.",
+  process: [
+    {
+      title: "Trigger",
+      description:
+        "ROI står numera för Risk Of Ignorance. Att ignorera vad som händer runt oss är det säkraste sättet att förr eller senare bli irrelevant för dina kunder. En snabbföränderlig spelplan kräver nämligen kontinuerlig och strukturerad innovation. Det är en anledning nog för ett första möte.",
+    },
+    {
+      title: "Research",
+      description:
+        "Här börjar vi med att snabbt och metodiskt skapa en övergripande förståelse för era utmaningar, både genom intervjuer och observationer. Era erfarenheter är vitala i alla steg, inte minst här.",
+    },
+    {
+      title: "Definiera Problem",
+      description:
+        "När vi på djupet har förstått era och era kunders olika utmaningar tar vi all information vi har och definierar problemet (topp 3 problem!) vi ska fokusera på.",
+    },
+    {
+      title: "Design",
+      description:
+        "Nu börjar två st olika designprocesser. Först den kreativa som görs tillsammans med er som kund och era slutanvändare.   Här bryter vi ned tidigare “sanningar” som håller oss tillbaka från att skapa nytt.   När vi släpper på kontrollen händer magi!   I detta steg har vi också bygget av prototypen (Minimal Viable Product).   Vi bygger, testar, får feedback, bygger, testar, feedback, bygger, testar, feedback (tror att du hajar?) - detta tills vi tillsammans känner oss nöjda med resultatet.",
+    },
+    {
+      title: "Lösning",
+      description:
+        "…För när vi är det, kallar vi det för att vår läsning är klar.   Ja, i alla fall för nu.   Världens slutar ju inte förändras så vi har såklart i åtanke att vi hela tiden kan vidareutveckla och förändra allt när det behövs.   Vi kallar det kontinuerlig relevans!",
+    },
+  ],
+};
+
 export const values = {
   title: "Våra Värden",
   values: [

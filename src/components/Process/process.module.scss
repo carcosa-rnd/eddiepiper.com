@@ -1,0 +1,190 @@
+@import "/src/styles/mixins";
+@import "/src//styles/variables";
+
+.process {
+  .container {
+    padding: 80px 15px;
+
+    @include mediumScreen() {
+      padding: 94px 40px;
+    }
+
+    @include xlScreen() {
+      padding: 94px 0;
+    }
+  }
+
+  .title,
+  .title + p {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+
+    &::first-letter {
+      color: $--primary-light-100;
+    }
+  }
+
+  .timeline_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 70px;
+    max-width: 1032px;
+
+    @include mediumScreen() {
+      margin-left: 30px;
+    }
+
+    @include largeScreen() {
+      margin-left: 0;
+    }
+
+    .center_line {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: calc(100% - 50px);
+      background: $--primary-light-200;
+      width: 4px;
+      top: 20px;
+
+      @include mediumScreen() {
+        height: calc(100% - 60px);
+        left: -30px;
+      }
+
+      @include largeScreen() {
+        height: calc(100% - 200px);
+        left: 50%;
+      }
+    }
+  }
+
+  .card_wrapper {
+    margin-bottom: 20px;
+
+    @include mediumScreen() {
+      margin-bottom: 50px;
+    }
+
+    @include largeScreen() {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .card_wrapper_right {
+    justify-content: flex-end;
+  }
+
+  .card {
+    position: relative;
+    background: $--primary-light-300;
+    max-width: 472px;
+    padding: 20px 22px;
+
+    &:hover {
+      cursor: zoom-in;
+    }
+
+    @include mediumScreen() {
+      align-self: flex-start;
+      max-width: unset;
+    }
+
+    @include largeScreen() {
+      max-width: 472px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      display: none;
+
+      @include mediumScreen() {
+        display: block;
+        position: absolute;
+        content: "";
+        background: $--primary-light-300;
+        width: 20px;
+        height: 20px;
+        left: -7px;
+        transform: rotate(45deg);
+      }
+
+      @include largeScreen() {
+        left: unset;
+        right: -7px;
+      }
+    }
+
+    .circle {
+      display: none;
+
+      @include mediumScreen() {
+        display: block;
+        position: absolute;
+        content: "";
+        background: $--primary-light;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        left: -40px;
+      }
+
+      @include largeScreen() {
+        left: unset;
+        right: -54px;
+      }
+    }
+
+    .card_title {
+      text-transform: capitalize;
+      margin-bottom: 10px;
+
+      &::first-letter {
+        color: $--primary-dark-100;
+      }
+    }
+
+    .description {
+      font-size: 14px;
+    }
+  }
+
+  .card_right {
+    &::before {
+      right: unset;
+      left: -7px;
+    }
+
+    .circle {
+      right: unset;
+
+      @include mediumScreen() {
+        left: -40px;
+      }
+
+      @include largeScreen() {
+        left: -54px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1115px) {
+  .process {
+    .card {
+      width: calc(25% + 170px);
+
+      .circle {
+        display: none;
+      }
+    }
+  }
+}
