@@ -8,7 +8,7 @@ import { process } from "../../eddiepiper.config";
 
 function Process() {
   return (
-    <section className={styles.process}>
+    <section id="Processen" className={styles.process}>
       <Container className={styles.container}>
         <h2 className={styles.title}>{process.title}</h2>
         <p>{process.description}</p>

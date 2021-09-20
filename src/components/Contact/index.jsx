@@ -7,7 +7,7 @@ import { contact } from "../../eddiepiper.config";
 
 function Contact() {
   return (
-    <section className={styles.contact}>
+    <section id="Kontakt" className={styles.contact}>
       <Container className={styles.container}>
         <div className={styles.bg}></div>
         <div className={styles.text_wrapper}>

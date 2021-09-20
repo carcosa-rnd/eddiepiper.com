@@ -8,7 +8,7 @@ import { values } from "../../eddiepiper.config";
 
 function Values() {
   return (
-    <section className={styles.values}>
+    <section id="Värden" className={styles.values}>
       <Container className={styles.container}>
         <h2 className={styles.title}>{values.title}</h2>
         <div className={styles.cards_wrapper}>

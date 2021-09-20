@@ -55,9 +55,9 @@ function Nav() {
 
         <div className={clsx(styles.nav_links_wrapper, "nav_links_wrapper")}>
           {nav.links.map((link, i) => (
-            <Link to={`#${link}`} className={styles.nav_link} key={i}>
+            <a href={`#${link}`} className={styles.nav_link} key={i}>
               {link}
-            </Link>
+            </a>
           ))}
         </div>
       </Container>

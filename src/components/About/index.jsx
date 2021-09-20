@@ -8,7 +8,7 @@ import { about } from "../../eddiepiper.config";
 
 function About() {
   return (
-    <section id="OmOss" className={styles.about}>
+    <section id="Om Oss" className={styles.about}>
       <Container className={styles.container}>
         <div className={styles.image_wrapper}>
           {about.images.map((person, i) => (
