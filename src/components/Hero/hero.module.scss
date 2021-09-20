@@ -3,7 +3,7 @@
 
 .hero {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../../assets/images/marten-bjork-n_IKQDCyrG0-unsplash.jpg") center no-repeat;
+    url("../../assets/images/dark_background.png") center no-repeat;
   background-size: cover;
   min-height: 350px;
   padding-top: 58px;
@@ -31,7 +31,7 @@
 
   .text_wrapper {
     @include mediumScreen() {
-      max-width: 546px;
+      max-width: 640px;
     }
   }
 

@@ -3,14 +3,14 @@ import martin from "./assets/images/martin.jpg";
 import petter from "./assets/images/petter.jpg";
 
 export const nav = {
-  links: ["Home", "Om Oss", "Processen", "Värden", "Kontakt"],
+  links: ["Hem", "Om Oss", "Processen", "Värden", "Kontakt"],
 };
 
 export const hero = {
   title: "eddie piper",
   description:
     "Vi är ett startup-team som identifierar problem i hotellbranchen som går att lösa med hjälp av digital innovation. Allt från att kapa kostnader till att skapa nya intäkter på ett innovativt sätt. Med hjälp av människor ifrån branchen grottar vi ner oss i verksamheten och problemet för att tillsammans hitta en lösning.",
-  tagline: "Hjälper Hotell Att Skapa Digital Innovation.",
+  tagline: "Vi bubblar av modig innovation!",
   button: "Ska vi köra?",
 };
 
@@ -36,4 +36,9 @@ export const about = {
       image: petter,
     },
   ],
+};
+
+export const contact = {
+  description: "Driver du hotell och vill bygga en spännande digital tjänst med oss?",
+  button: "KONTAKTA OSS",
 };
