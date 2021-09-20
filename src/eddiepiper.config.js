@@ -2,6 +2,11 @@ import daniel from "./assets/images/daniel.jpg";
 import martin from "./assets/images/martin.jpg";
 import petter from "./assets/images/petter.jpg";
 
+import humanCentric from "./assets/images/human_centric.jpg";
+import courage from "./assets/images/courage.jpg";
+import improvement from "./assets/images/improvement.jpg";
+import ownershipSpirit from "./assets/images/ownership_spirit.jpg";
+
 export const nav = {
   links: ["Hem", "Om Oss", "Processen", "Värden", "Kontakt"],
 };
@@ -34,6 +39,36 @@ export const about = {
       name: "Petter",
       description: "Placeholder Longer",
       image: petter,
+    },
+  ],
+};
+
+export const values = {
+  title: "Våra Värden",
+  values: [
+    {
+      title: "Human Centric",
+      description:
+        "Allt vi gör grundar sig på insikter från våra kunders erfarenheter.   Vi är experter på att bygga tekniska lösningar,   ni på er verksamhet.   båda behövs för att skapa värde.   det gör vi genom att alltid fråga oss varför vi gör saker.",
+      image: humanCentric,
+    },
+    {
+      title: "Courage",
+      description:
+        "Genom att nollställa våra förväntningar och släppa på kontrollen i våra kreativa processer inspirerar vi våra kunder till att våga vara med att skapa annorlunda lösningar.",
+      image: courage,
+    },
+    {
+      title: "Constant and Never-ending Improvement",
+      description:
+        "Allt vi gör grundar sig på insikter från våra kunders erfarenheter.   Vi är experter på att bygga tekniska lösningar,   ni på er verksamhet.   båda behövs för att skapa värde.   det gör vi genom att alltid fråga oss varför vi gör saker.",
+      image: improvement,
+    },
+    {
+      title: "Ownership Spirit",
+      description:
+        "Vi strävar efter en miljö där vi alltid känner- och vill ta ansvar. Genom det menar vi att vi optimerar allt vi gör och säkerställer att saker bli gjorda när dom ska.",
+      image: ownershipSpirit,
     },
   ],
 };
