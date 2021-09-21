@@ -3,6 +3,8 @@
 
 .about {
   min-height: 600px;
+  color: $--text-color-white;
+  background: $--dark-bg;
 
   .container {
     display: flex;
@@ -24,7 +26,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
     align-items: center;
-    background: $--primary-light-400;
+    background: $--about-img-bg;
     width: 100%;
     height: 350px;
     padding: 15px;
@@ -76,16 +78,15 @@
     color: $--text-color-white;
     text-decoration: none;
     font-size: 14px;
-    background: $--primary-light-100;
-    border: 2px solid $--primary-light-100;
+    background: $--cta-button;
+    border: 2px solid $--cta-button;
     padding: 10px 20px;
-    transition: background 300ms ease, border 300ms ease, color 300ms ease;
+    transition: background 300ms ease, border 300ms ease;
     font-weight: 700;
 
     &:hover {
       background: transparent;
-      color: $--text-color-black;
-      transition: background 300ms ease, border 300ms ease, color 300ms ease;
+      transition: background 300ms ease, border 300ms ease;
     }
   }
 }

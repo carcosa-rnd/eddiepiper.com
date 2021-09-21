@@ -67,7 +67,7 @@
     height: 35px;
 
     @include mediumScreen() {
-      height: 40px;
+      height: 45px;
     }
 
     a {
@@ -113,7 +113,7 @@
     transition: color 300ms;
 
     &:hover {
-      color: $--primary-light-100;
+      color: $--nav-link-hover;
       transition: color 300ms;
     }
 

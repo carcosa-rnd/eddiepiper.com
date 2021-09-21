@@ -1,9 +1,11 @@
 @import "/src/styles/mixins";
-@import "/src//styles/variables";
+@import "/src/styles/variables";
 
 .process {
   position: relative;
   overflow: hidden;
+  background: $--dark-bg;
+  color: $--text-color-white;
 
   .bg {
     position: absolute;
@@ -13,7 +15,7 @@
     .circle {
       display: none;
       position: absolute;
-      background: $--primary-light-400;
+      background: $--process-circle-color;
       border-radius: 100%;
 
       @include mediumScreen() {
@@ -82,8 +84,7 @@
     }
   }
 
-  .title,
-  .title + p {
+  .title {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 22px;
@@ -91,6 +92,11 @@
     &::first-letter {
       color: $--primary-light-100;
     }
+  }
+
+  .title + p {
+    text-align: center;
+    max-width: 924px;
   }
 
   .timeline_wrapper {
@@ -115,7 +121,7 @@
       left: 50%;
       transform: translateX(-50%);
       height: calc(100% - 50px);
-      background: $--primary-light-200;
+      background: $--process-center-line-color;
       width: 4px;
       top: 20px;
 
@@ -151,9 +157,10 @@
 
   .card {
     position: relative;
-    background: $--primary-light-300;
+    background: $--process-card-bg;
     max-width: 472px;
     padding: 20px 22px;
+    color: $--text-color-black;
 
     &:hover {
       cursor: zoom-in;
@@ -179,7 +186,7 @@
         display: block;
         position: absolute;
         content: "";
-        background: $--primary-light-300;
+        background: $--process-card-bg;
         width: 20px;
         height: 20px;
         left: -7px;
@@ -199,7 +206,7 @@
         display: block;
         position: absolute;
         content: "";
-        background: $--primary-light;
+        background: $--process-center-line-circle-color;
         width: 20px;
         height: 20px;
         border-radius: 100%;
@@ -217,7 +224,7 @@
       margin-bottom: 10px;
 
       &::first-letter {
-        color: $--primary-dark-100;
+        color: $--process-card-first-letter-color;
       }
     }
 
