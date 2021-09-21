@@ -2,6 +2,10 @@
 @import "./fonts";
 @import "./mixins";
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::after,
 *::before {
