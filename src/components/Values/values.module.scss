@@ -3,7 +3,7 @@
 
 .values {
   position: relative;
-  background: #553a64;
+  background: $--values-bg;
   color: $--text-color-white;
   overflow: hidden;
 
@@ -15,7 +15,7 @@
     .circle {
       display: none;
       position: absolute;
-      background: $--primary-dark-100;
+      background: $--values-circle-color;
       border-radius: 100%;
 
       @include mediumScreen() {
