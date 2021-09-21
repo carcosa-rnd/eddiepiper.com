@@ -1,0 +1,89 @@
+@import "/src/styles/mixins";
+@import "/src/styles/variables";
+
+.hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/images/dark_background.png") center no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  padding-top: 58px;
+  color: $--text-color-white;
+
+  @include mediumScreen() {
+    height: 100vh;
+    min-height: 100vh;
+    padding-top: 68px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 80px 15px;
+
+    @include mediumScreen() {
+      padding: 94px 40px;
+    }
+
+    @include xlScreen() {
+      padding: 94px 0;
+    }
+  }
+
+  .text_wrapper {
+    @include mediumScreen() {
+      max-width: 640px;
+    }
+  }
+
+  .title {
+    text-transform: capitalize;
+    margin-bottom: 14px;
+    @include mediumScreen() {
+      margin-bottom: 22px;
+    }
+  }
+
+  .description {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 540px;
+
+    @include mediumScreen() {
+      font-size: 20px;
+      margin-bottom: 24px;
+      max-width: unset;
+    }
+  }
+
+  .tagline {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 28px;
+
+    @include mediumScreen() {
+      font-size: 22px;
+      margin-bottom: 38px;
+    }
+  }
+
+  .cta {
+    display: inline-block;
+    color: $--text-color-white;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid $--primary-light-100;
+    padding: 10px 20px;
+    transition: background 300ms ease;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $--primary-light-100;
+      transition: background 300ms ease;
+    }
+  }
+}
