@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route path="/" exact>
+        <Route path="/eddiepiper.com" exact>
           <Home />
         </Route>
       </Switch>
