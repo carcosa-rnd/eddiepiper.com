@@ -1,7 +1,15 @@
+// about images
 import daniel from "./assets/images/daniel.jpg";
 import martin from "./assets/images/martin.jpg";
 import petter from "./assets/images/petter.jpg";
 
+// process images
+import trigger from "./assets/images/process-1.png";
+import definieraProblem from "./assets/images/process-2.png";
+import creativeProcess from "./assets/images/process-3.png";
+import losning from "./assets/images/process-4.png";
+
+// values images
 import humanCentric from "./assets/images/human_centric.jpg";
 import courage from "./assets/images/courage.jpg";
 import improvement from "./assets/images/improvement.jpg";
@@ -52,6 +60,7 @@ export const process = {
       title: "Trigger",
       description:
         "ROI står numera för Risk Of Ignorance. Att ignorera vad som händer runt oss är det säkraste sättet att förr eller senare bli irrelevant för dina kunder. En snabbföränderlig spelplan kräver nämligen kontinuerlig och strukturerad innovation. Det är en anledning nog för ett första möte.",
+      image: trigger,
     },
     {
       title: "Research",
@@ -62,16 +71,19 @@ export const process = {
       title: "Definiera Problem",
       description:
         "När vi på djupet har förstått era och era kunders olika utmaningar tar vi all information vi har och definierar problemet (topp 3 problem!) vi ska fokusera på.",
+      image: definieraProblem,
     },
     {
       title: "Design",
       description:
         "Nu börjar två st olika designprocesser. Först den kreativa som görs tillsammans med er som kund och era slutanvändare.   Här bryter vi ned tidigare “sanningar” som håller oss tillbaka från att skapa nytt.   När vi släpper på kontrollen händer magi!   I detta steg har vi också bygget av prototypen (Minimal Viable Product).   Vi bygger, testar, får feedback, bygger, testar, feedback, bygger, testar, feedback (tror att du hajar?) - detta tills vi tillsammans känner oss nöjda med resultatet.",
+      image: creativeProcess,
     },
     {
       title: "Lösning",
       description:
         "…För när vi är det, kallar vi det för att vår läsning är klar.   Ja, i alla fall för nu.   Världens slutar ju inte förändras så vi har såklart i åtanke att vi hela tiden kan vidareutveckla och förändra allt när det behövs.   Vi kallar det kontinuerlig relevans!",
+      image: losning,
     },
   ],
 };
