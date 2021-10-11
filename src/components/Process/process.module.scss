@@ -138,6 +138,7 @@
   }
 
   .card_wrapper {
+    position: relative;
     margin-bottom: 20px;
 
     @include mediumScreen() {
@@ -249,6 +250,33 @@
       @include largeScreen() {
         left: -54px;
       }
+    }
+  }
+
+  .image_wrapper {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000000;
+    background: rgba($color: $--dark-bg, $alpha: 0.8);
+    cursor: pointer;
+
+    @include mediumScreen() {
+      display: block;
+    }
+
+    .image {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 68px;
+      bottom: 0;
+      margin: auto;
+      width: 70vw;
+      height: 90vh;
     }
   }
 }

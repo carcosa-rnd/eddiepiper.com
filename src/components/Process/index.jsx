@@ -31,6 +31,7 @@ function Process() {
               title={item.title}
               description={item.description}
               position={i % 2 !== 0 ? "right" : "left"}
+              image={item.image}
             />
           ))}
         </div>
