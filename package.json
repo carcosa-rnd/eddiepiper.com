@@ -7,8 +7,9 @@
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint .",
-    "sync-dep": "yarn outdated || yarn upgrade-interactive --latest && syncpack fix-mismatches && syncpack list-mismatches && syncyarnlock -ks"
-  },
+    "sync-dep": "yarn outdated || yarn upgrade-interactive --latest && syncpack fix-mismatches && syncpack list-mismatches && syncyarnlock -ks",
+		"deploy": "yarn build"
+	},
   "dependencies": {
     "clsx": "^1.1.1",
     "gsap": "^3.7.1",
