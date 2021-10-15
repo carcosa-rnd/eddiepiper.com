@@ -90,7 +90,7 @@
     margin-bottom: 22px;
 
     &::first-letter {
-      color: $--primary-light-100;
+      color: $--first-letter;
     }
   }
 
@@ -253,7 +253,7 @@
       margin-bottom: 10px;
 
       &::first-letter {
-        color: $--process-card-first-letter-color;
+        color: $--first-letter;
       }
     }
 

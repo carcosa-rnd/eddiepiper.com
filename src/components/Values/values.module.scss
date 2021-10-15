@@ -83,7 +83,7 @@
     margin-bottom: 28px;
 
     &::first-letter {
-      color: $--primary-light-100;
+      color: $--first-letter;
     }
 
     @include mediumScreen() {
@@ -155,7 +155,7 @@
       margin-bottom: 10px;
 
       &::first-letter {
-        color: $--primary-light-100;
+        color: $--first-letter;
       }
     }
   }
