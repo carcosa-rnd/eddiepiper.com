@@ -31,7 +31,12 @@ function Process() {
       </div>
       <Container className={styles.container}>
         <h2 className={styles.title}>{process.title}</h2>
-        <p>{process.description}</p>
+
+        <div className={styles.image_wrapper__dd}>
+          <img src={process.image} alt="double diamond process" />
+        </div>
+
+        <p className={styles.dd_description}>{process.description}</p>
 
         <div className={styles.timeline_wrapper}>
           <div className={styles.center_line}></div>
