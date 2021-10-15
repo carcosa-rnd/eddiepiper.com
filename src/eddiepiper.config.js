@@ -4,16 +4,17 @@ import martin from "./assets/images/martin.jpg";
 import petter from "./assets/images/petter.jpg";
 
 // process images
+import doubleDiamond from "./assets/images/double_diamond.png";
 import trigger from "./assets/images/process-1.png";
 import definieraProblem from "./assets/images/process-2.png";
 import creativeProcess from "./assets/images/process-3.png";
 import losning from "./assets/images/process-4.png";
 
 // values images
-import humanCentric from "./assets/images/human_centric.jpg";
-import courage from "./assets/images/courage.jpg";
-import improvement from "./assets/images/improvement.jpg";
-import ownershipSpirit from "./assets/images/ownership_spirit.jpg";
+import humanCentric from "./assets/images/human_centric.png";
+import courage from "./assets/images/courage.png";
+import improvement from "./assets/images/improvement.png";
+import ownershipSpirit from "./assets/images/ownership_spirit.png";
 
 export const nav = {
   links: ["Hem", "Om Oss", "Processen", "Värden", "Kontakt"],
@@ -52,7 +53,8 @@ export const about = {
 };
 
 export const process = {
-  title: "Processen",
+  title: "Double Diamond Process",
+  image: doubleDiamond,
   description:
     "Vi älskar att skapa genom teknologi, men inte utan att först och på djupet förstå människors beteenden och behov. För bara så kan vi bygga tjänster som kunder älskar. Därför har vi en väl beprövad process för att formulera de viktigaste insikterna och skapa bubblande innovation! Vi ämnar till ett strukturerat innovationsarbete, men i det ingår att våga utforska okända områden, utmana nuläge och sätta en helt ny riktning. Vi pysslar med modig innovation, tillsammans med slutanvändare.",
   process: [
