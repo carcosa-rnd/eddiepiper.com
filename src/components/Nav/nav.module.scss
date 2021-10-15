@@ -125,4 +125,9 @@
       }
     }
   }
+
+  .active {
+    color: $--nav-link-hover;
+    transition: color 300ms;
+  }
 }

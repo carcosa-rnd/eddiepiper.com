@@ -10,7 +10,7 @@ import { nav } from "../../eddiepiper.config";
 
 import logo from "../../assets/images/logo.png";
 
-function Nav() {
+function Nav({ currentSection }) {
   const [menuTl] = useState(gsap.timeline({ paused: true, defaults: { duration: 0.3 } }));
 
   const toggleNav = () => menuTl.reversed(!menuTl.reversed());
@@ -55,7 +55,11 @@ function Nav() {
 
         <div className={clsx(styles.nav_links_wrapper, "nav_links_wrapper")}>
           {nav.links.map((link, i) => (
-            <a href={`#${link}`} className={styles.nav_link} key={i}>
+            <a
+              href={`#${link}`}
+              className={clsx(styles.nav_link, currentSection === link ? styles.active : "")}
+              key={i}
+            >
               {link}
             </a>
           ))}
