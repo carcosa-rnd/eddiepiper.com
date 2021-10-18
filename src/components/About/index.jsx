@@ -2,6 +2,7 @@ import React from "react";
 
 import Container from "../Layout/Container";
 import Card from "./Card";
+import SectionTitle from "../SectionTitle";
 import styles from "./about.module.scss";
 
 import { about } from "../../eddiepiper.config";
@@ -17,7 +18,7 @@ function About() {
         </div>
 
         <div className={styles.text_wrapper}>
-          <h2 className={styles.title}>{about.title}</h2>
+          <SectionTitle text={about.title} />
           <p className={styles.description}>{about.description}</p>
           <a className={styles.cta} href="#Kontakt">
             {about.button}

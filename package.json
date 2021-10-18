@@ -1,5 +1,4 @@
 {
-	"homepage": "http://carcosa-rnd.github.io/eddiepiper.com",
   "name": "eddie-piper",
   "version": "0.0.0",
   "homepage": "http://carcosa-rnd.github.io/eddiepiper.com/",
@@ -10,7 +9,7 @@
     "lint": "eslint .",
     "sync-dep": "yarn outdated || yarn upgrade-interactive --latest && syncpack fix-mismatches && syncpack list-mismatches && syncyarnlock -ks",
     "predeploy": "yarn build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "clsx": "^1.1.1",

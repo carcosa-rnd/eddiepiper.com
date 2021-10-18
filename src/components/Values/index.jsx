@@ -4,6 +4,7 @@ import gsap from "gsap";
 
 import Container from "../Layout/Container";
 import Card from "./Card";
+import SectionTitle from "../SectionTitle";
 import styles from "./values.module.scss";
 
 import { values } from "../../eddiepiper.config";
@@ -29,7 +30,8 @@ function Values() {
         <div className={clsx(styles.circle, styles.circle_6, "circle-6")}></div>
       </div>
       <Container className={styles.container}>
-        <h2 className={styles.title}>{values.title}</h2>
+        <SectionTitle className={styles.title} text={values.title} />
+
         <div className={styles.cards_wrapper}>
           {values.values.map((value, i) => (
             <Card

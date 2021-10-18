@@ -1,0 +1,12 @@
+@import "/src/styles/mixins";
+@import "/src/styles/variables";
+
+.title {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+
+  &::first-letter {
+    color: $--first-letter;
+  }
+}

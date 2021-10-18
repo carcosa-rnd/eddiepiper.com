@@ -84,16 +84,6 @@
     }
   }
 
-  .title {
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 22px;
-
-    &::first-letter {
-      color: $--first-letter;
-    }
-  }
-
   .image_wrapper__dd {
     width: 100%;
     margin: 30px auto 30px;

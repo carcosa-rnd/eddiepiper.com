@@ -4,6 +4,7 @@ import gsap from "gsap";
 
 import Container from "../Layout/Container";
 import Card from "./Card";
+import SectionTitle from "../SectionTitle";
 import styles from "./process.module.scss";
 
 import { process } from "../../eddiepiper.config";
@@ -30,7 +31,7 @@ function Process() {
         <div className={clsx(styles.circle, styles.circle_7, "circle-7")}></div>
       </div>
       <Container className={styles.container}>
-        <h2 className={styles.title}>{process.title}</h2>
+        <SectionTitle text={process.title} />
 
         <div className={styles.image_wrapper__dd}>
           <img src={process.image} alt="double diamond process" />
