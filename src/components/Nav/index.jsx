@@ -59,6 +59,7 @@ function Nav({ currentSection }) {
               href={`#${link}`}
               className={clsx(styles.nav_link, currentSection === link ? styles.active : "")}
               key={i}
+              onClick={toggleNav}
             >
               {link}
             </a>
