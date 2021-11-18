@@ -23,7 +23,7 @@ export const nav = {
 export const hero = {
   title: "eddie piper",
   description:
-    "Vi är ett startup-team som identifierar problem i hotellbranchen som går att lösa med hjälp av digital innovation. Allt från att kapa kostnader till att skapa nya intäkter på ett innovativt sätt. Med hjälp av människor ifrån branchen grottar vi ner oss i verksamheten och problemet för att tillsammans hitta en lösning.",
+    "Vi är ett startup-team som identifierar problem i eventbranschen som går att lösa med hjälp av digital innovation. Allt från att kapa kostnader till att skapa nya intäkter på ett innovativt sätt. Med hjälp av människor ifrån branchen grottar vi ner oss i verksamheten och problemet för att tillsammans hitta en lösning.",
   tagline: "Vi bubblar av modig innovation!",
   button: "Ska vi köra?",
 };
@@ -31,7 +31,7 @@ export const hero = {
 export const about = {
   title: "om oss",
   description:
-    "Vi är en modig startup som utmanar tidigare arbetssätt och metoder inom hotellbranschen. Allt befintligt är som det alltid varit och kan bara växa genom två sätt - att få mer eller mindre av något. Genom att utforska nya områden däremot, skapas också nya möjligheter och nya sätt att växa - det är därför vi existerar. Vi skapar det du inte trodde var möjligt, men alltid med människan i fokus. Vi lever och brinner modig och bubblande innovation.",
+    "Vi är en modig startup som utmanar tidigare arbetssätt och metoder inom eventbranschen. Allt befintligt är som det alltid varit och kan bara växa genom två sätt - att få mer eller mindre av något. Genom att utforska nya områden däremot, skapas också nya möjligheter och nya sätt att växa - det är därför vi existerar. Vi skapar det du inte trodde var möjligt, men alltid med människan i fokus. Vi lever och brinner modig och bubblande innovation.",
   button: "KONTAKTA OSS",
   images: [
     {
@@ -121,6 +121,6 @@ export const values = {
 };
 
 export const contact = {
-  description: "Driver du hotell och vill bygga en spännande digital tjänst med oss?",
+  description: "Arrangerar ni konferenser och vill utveckla ert erbjudande genom digitalisering?",
   button: "KONTAKTA OSS",
 };
